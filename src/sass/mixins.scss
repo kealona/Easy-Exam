@@ -1,0 +1,46 @@
+//组件变量
+$namespace: 'yk';
+$element-separator: '__';
+$modifier-separator: '--';
+$state-prefix: 'is-';
+
+//合成组件类型
+@mixin b($block) {
+	$B: $namespace + '-' + $block !global;
+	
+	.#{$B} {
+		@content;
+	}
+}
+
+//合成组件修饰语
+@mixin m($modifier) {
+	$selector: &;
+	$currentSelector: "";
+	
+	/*！
+	合成类名
+	 */
+	@each $unit in $modifier {
+		$currentSelector: #{$currentSelector + & + $modifier-separator + $unit + ','};
+	}
+	
+	@at-root {
+		#{$currentSelector} {
+			@content;
+		}
+	}
+}
+
+//计算大小
+@mixin size($padding-size, $font-size, $border-radius) {
+	padding: $padding-size;
+	font-size: $font-size;
+	border-radius: $border-radius;
+}
+
+@mixin typeColor($color, $background-color, $border-color) {
+	color: $color;
+	background-color: $background-color;
+	border-color: $border-color;
+}

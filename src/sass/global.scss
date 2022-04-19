@@ -1,0 +1,103 @@
+/**
+ * 基础配色
+ */
+$--color-base: #1C6BFF !default;
+$--color-nav: #242529 !default;
+$--color-background: #f5f7f9 !default;
+$--color-white: #fff !default;
+$--color-font-nav: rgba(255, 255, 255, 0.85) !default;
+
+$--color-danger: #f44336 !default;
+$--color-success: #4caf50 !default;
+$--color-primary: #1C6BFF !default;
+$--color-warning: #ffb202 !default;
+$--color-info: #909399 !default;
+
+$--color-danger-light: mix($--color-white, $--color-danger, 80%) !default;
+$--color-success-light: mix($--color-white, $--color-success, 80%) !default;
+$--color-primary-light: mix($--color-white, $--color-primary, 80%) !default;
+$--color-warning-light: mix($--color-white, $--color-warning, 80%) !default;
+$--color-info-light: mix($--color-white, $--color-info, 80%) !default;
+
+$--color-danger-lighter: mix($--color-white, $--color-danger, 90%) !default;
+$--color-success-lighter: mix($--color-white, $--color-success, 90%) !default;
+$--color-primary-lighter: mix($--color-white, $--color-primary, 90%) !default;
+$--color-info-lighter: mix($--color-white, $--color-info, 90%) !default;
+$--color-warning-lighter: mix($--color-white, $--color-warning, 90%) !default;
+
+/**
+ * 渐变色
+ */
+$--color-linear: linear-gradient(104deg, #6B97FF 0%, #1050FF 100%);
+
+/**
+ * 阴影
+ */
+$--shadow-base: 0px 0px 12px 0px rgba(28, 94, 255 / 25%, 1) !default;
+$--shadow-primary: 0 2px 4px rgba(0, 0, 0, .12), 0 0 6px rgba(0, 0, 0, .04) !default;
+$--shadow-light: 0 2px 12px 0 rgba(0, 0, 0, 0.1) !default;
+
+/**
+ * 字体颜色
+ */
+$--color-text-primary: #071B3F !default;
+$--color-text-second: rgba(7, 27, 63, 0.8) !default;
+$--color-text-third: rgba(7, 27, 63, 0.6) !default;
+$--color-text-fourth: rgba(7, 27, 63, 0.4) !default;
+
+/**
+ * 边框 border
+ */
+$--border-width: 1px !default;
+$--border-style: solid !default;
+$--border-color-base: #DCDFE6 !default;
+$--border-color-light: #E4E7ED !default;
+$--border-color-lighter: #EBEEF5 !default;
+$--border-base: $--border-width $--border-style $--border-color-base !default;
+
+/**
+ * 边框圆角
+ */
+$--border-radius-none: 0px !default;
+$--border-radius-small: 2px !default;
+$--border-radius-medium: 4px !default;
+$--border-radius-large: 6px !default;
+$--border-radius-circle: 30px !default;
+
+/**
+ * 字体大小
+ */
+$--font-size-extra-small: 12px !default;
+$--font-size-small: 13px !default;
+$--font-size-base: 14px !default;
+$--font-size-medium: 16px !default;
+$--font-size-large: 18px !default;
+$--font-size-extra-large: 20px !default;
+
+/**
+ * padding
+ */
+$--padding-mini-horizontal: 15px !default;
+$--padding-mini-vertical: 7px !default;
+$--padding-small-horizontal: 15px !default;
+$--padding-small-vertical: 9px !default;
+$--padding-medium-horizontal: 20px !default;
+$--padding-medium-vertical: 10px !default;
+$--padding-base-horizontal: 20px !default;
+$--padding-base-vertical: 12px !default;
+
+$--padding-mini: $--padding-mini-vertical $--padding-mini-horizontal;
+$--padding-small: $--padding-small-vertical $--padding-small-horizontal;
+$--padding-base: $--padding-base-vertical $--padding-base-horizontal;
+$--padding-large: 12px 15px !default;
+
+
+/**
+ * Transition
+ */
+$--all-transition: all .3s cubic-bezier(.645,.045,.355,1) !default;
+$--fade-transition: opacity 300ms cubic-bezier(0.23, 1, 0.32, 1) !default;
+$--fade-linear-transition: opacity 200ms linear !default;
+$--md-fade-transition: transform 300ms cubic-bezier(0.23, 1, 0.32, 1), opacity 300ms cubic-bezier(0.23, 1, 0.32, 1) !default;
+$--border-transition-base: border-color .2s cubic-bezier(.645,.045,.355,1) !default;
+$--color-transition-base: color .2s cubic-bezier(.645,.045,.355,1) !default;
